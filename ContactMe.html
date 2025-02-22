@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <style>
+      body {
+        margin: 0;
+        padding: 30px;
+        background-color: #bfe7ec; /* Light grey background */
+        font-family: sans-serif;
+      }
+
+      header {
+        background-color: #333;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        box-shadow: 0 0 10px 0 black;
+        padding: 0 20px;
+      }
+
+      header ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+      }
+
+      header li {
+        margin-right: 20px;
+      }
+
+      header li a {
+        color: paleturquoise;
+        text-decoration: none;
+        font-size: 18px;
+      }
+
+      header li a:hover {
+        color: #3bd3e3;
+      }
+
+      .w3-container {
+        max-width: 500px;
+        margin: 100px auto;
+        padding: 20px;
+        background: white;
+        border-radius: 8px;
+      }
+
+      /* Form styles */
+      label {
+        font-weight: bold;
+      }
+
+      #name {
+        background-color: #e3f2fd;
+      } /* Light blue */
+      #email {
+        background-color: #fce4ec;
+      } /* Light pink */
+      #subject {
+        background-color: #e8f5e9;
+      } /* Light green */
+      #message {
+        background-color: #fff3e0;
+      } /* Light orange */
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      input[type="submit"] {
+        background-color: #333;
+        color: white;
+        border: none;
+        cursor: pointer;
+        padding: 10px 15px;
+        font-size: 16px;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="Homepage.html">Home</a></li>
+          <li><a href="AboutMe.html">About</a></li>
+          <li><a href="Resume.html">Resume</a></li>
+          <li><a href="ContactMe.html">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <form class="w3-container w3-card-4" action="/action_page.php">
+      <label class="w3-text-blue" for="name">Name:</label>
+      <input type="text" id="name" name="name" />
+
+      <label class="w3-text-red" for="email">Email:</label>
+      <input type="email" id="email" name="email" />
+
+      <label class="w3-text-green" for="subject">Subject:</label>
+      <input type="text" id="subject" name="subject" />
+
+      <label class="w3-text-orange" for="message">Message:</label>
+      <textarea id="message" name="message" rows="5"></textarea>
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
